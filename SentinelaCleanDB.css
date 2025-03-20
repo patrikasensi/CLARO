@@ -1,0 +1,238 @@
+/* ===============================
+ Estilos Gerais
+=============================== */
+body {
+font-family: "Roboto", sans-serif;
+background-color: #F9FAFB; /* Aproximação do bg-gray-50 */
+}
+
+/* ===============================
+ DataTables Customização
+=============================== */
+.dataTables_wrapper .dataTables_paginate .page-link {
+color: #fff !important;
+background-color: #E60012 !important;
+border: none;
+}
+.dataTables_wrapper .dataTables_paginate .active .page-link {
+background-color: #B2000F !important;
+}
+
+/* ===============================
+ Cartões de Informação (Info Cards)
+=============================== */
+.info-card {
+position: relative;
+text-align: center;
+background: #fff;
+border-radius: 12px;
+padding: 20px;
+margin: 10px 0;
+transition: transform 0.3s ease;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+}
+.info-card:hover {
+transform: scale(1.05);
+}
+.info-card .card-icon {
+position: absolute;
+right: 10px;
+bottom: 10px;
+font-size: 4rem;
+opacity: 0.2;
+}
+.info-card .card-value {
+font-size: 2.5rem;
+font-weight: bold;
+}
+.info-card .card-label {
+font-size: 1.2rem;
+margin-top: 10px;
+}
+.card-green {
+background-color: #d4edda;
+color: #155724;
+}
+.card-yellow {
+background-color: #fff3cd;
+color: #856404;
+}
+.card-red {
+background-color: #f8d7da;
+color: #721c24;
+}
+
+/* ===============================
+ Cartões de Report (segunda linha)
+=============================== */
+.report-card {
+position: relative;
+border-radius: 12px;
+padding: 20px;
+margin: 10px 0;
+transition: transform 0.3s ease;
+color: #fff;
+overflow: hidden;
+}
+.report-card:hover {
+transform: scale(1.05);
+}
+.report-card .icon-bg {
+position: absolute;
+left: 1rem;
+top: 1rem;
+font-size: 2rem;
+opacity: 0.2;
+}
+
+/* ===============================
+ Gráfico: Limitação de Altura
+=============================== */
+#userChart {
+max-height: 300px;
+}
+
+/* ===============================
+ Caixas de Destaque e Aviso
+=============================== */
+.highlight-box {
+background-color: #fff8dc;
+padding: 5px 10px;
+display: inline-block;
+font-family: Arial, sans-serif;
+font-size: 14px;
+border-left: 3px solid #ccc;
+}
+.highlight-box b {
+font-weight: bold;
+}
+.warning-box {
+background-color: #ffeeee;
+padding: 10px;
+border: 1px solid #cc0000;
+color: #cc0000;
+font-family: Arial, sans-serif;
+font-size: 14px;
+text-align: center;
+border-radius: 8px;
+}
+.warning-box b {
+font-weight: bold;
+}
+
+/* ===============================
+ Badges (Resumo Geral, por Usuários e por Database)
+=============================== */
+.badge-container {
+display: flex;
+align-items: center;
+}
+.badge-icon {
+width: 80px;
+height: 80px;
+background-color: #f2f2f2;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 6px solid white;
+z-index: 2;
+}
+.badge-icon i {
+font-size: 36px;
+color: #404040;
+}
+.badge-text {
+background-color: #222;
+color: #fff;
+padding: 8px 18px;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 220px;
+text-transform: uppercase;
+margin-left: -35px;
+padding-left: 50px;
+border-top-left-radius: 0;
+border-bottom-left-radius: 0;
+}
+.badge-text span {
+font-size: 12px;
+opacity: 0.8;
+letter-spacing: 0.5px;
+line-height: 14px;
+}
+.badge-text strong {
+font-size: 24px;
+line-height: 24px;
+}
+.badge-text,
+.badge-text-red {
+font-family: "Bebas Neue", sans-serif;
+font-weight: 400;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+.badge-text-red {
+background-color: #C00000; /* Vermelho */
+color: #fff;
+padding: 8px 18px;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 220px;
+text-transform: uppercase;
+margin-left: -35px;
+padding-left: 50px;
+border-top-left-radius: 0;
+border-bottom-left-radius: 0;
+}
+.badge-text-red span {
+font-size: 12px;
+opacity: 0.8;
+letter-spacing: 0.5px;
+line-height: 14px;
+}
+.badge-text-red strong {
+font-size: 24px;
+line-height: 24px;
+}
+
+/* ===============================
+ Cabeçalho com Gradient
+=============================== */
+.header-gradient {
+background: linear-gradient(to right, #E60012, #B2000F);
+}
+.header-content {
+color: #fff;
+padding: 3rem 1.5rem; /* Equivalente a py-5 px-4 */
+border-radius: 0.25rem;
+box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+text-align: center;
+}
+
+/* ===============================
+ Customização do Accordion
+=============================== */
+.accordion-button:not(.collapsed) {
+font-weight: bold;
+background-color: #f2f2f2 !important;
+color: inherit;
+}
+.accordion-button.collapsed:hover {
+background-color: #d9d9d9 !important;
+color: inherit;
+}
+
+/* ===============================
+ Logo do Claro no Footer
+=============================== */
+.claro-logo-footer {
+width: 100px;
+display: block;
+margin: 10px auto 5px auto;
+}
